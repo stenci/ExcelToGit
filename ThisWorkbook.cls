@@ -11,6 +11,8 @@ Option Explicit
 
 Private Sub Workbook_SheetSelectionChange(ByVal Sh As Object, ByVal Target As Range)
   Dim Txt As String, C As Integer
+  If Target.Rows.Count > 1 Then Exit Sub
+  If Target.Row > 1 And Target.Columns.Count > 1 Then Exit Sub
   C = Target.Column
   If C = COL_EXPORT Or C = COL_GIT_GUI Or C = COL_GITK Or C = COL_GIT_BASH Then
     Txt = Target.Cells(1, 1).Value2
