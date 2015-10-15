@@ -264,3 +264,7 @@ Sub GitBash()
   
   GoToA2
 End Sub
+
+Function FolderName(FullPath As String) As String
+  FolderName = Mid(FullPath, InStrRev(FullPath, "\") + 1)
+End Function
