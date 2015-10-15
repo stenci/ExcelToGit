@@ -149,7 +149,11 @@ Sub Refresh()
     End If
   Next AI
   
+  Dim C As Integer
   ActiveSheet.UsedRange.EntireColumn.AutoFit
+  For C = 1 To ActiveSheet.UsedRange.Columns.Count
+    If ActiveSheet.Columns(C).EntireColumn.ColumnWidth > 40 Then ActiveSheet.Columns(C).EntireColumn.ColumnWidth = 40
+  Next C
   
   Application.EnableEvents = True
   
