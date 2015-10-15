@@ -214,10 +214,15 @@ Sub GitGui()
     Exit Sub
   End If
   
-  ChDir GitFolder
+  ChDir2 GitFolder
   Shell """C:\Program Files\Git\cmd\Git-gui.exe"""
   
   GoToA2
+End Sub
+
+Sub ChDir2(Path As String)
+  If Mid(Path, 2, 1) = ":" Then ChDrive Left(Path, 2)
+  ChDir Path
 End Sub
 
 Sub Gitk()
@@ -234,7 +239,7 @@ Sub Gitk()
     Exit Sub
   End If
   
-  ChDir GitFolder
+  ChDir2 GitFolder
   Shell """C:\Program Files\Git\cmd\Gitk.exe"""
   
   GoToA2
@@ -254,7 +259,7 @@ Sub GitBash()
     Exit Sub
   End If
   
-  ChDir GitFolder
+  ChDir2 GitFolder
   Shell """C:\Program Files\Git\Git-bash.exe"""
   
   GoToA2
