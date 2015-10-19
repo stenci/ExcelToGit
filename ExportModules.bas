@@ -240,7 +240,7 @@ Sub Gitk()
   End If
   
   ChDir2 GitFolder
-  Shell """C:\Program Files\Git\cmd\Gitk.exe"""
+  Shell """C:\Program Files\Git\cmd\Gitk.exe"" --all"
   
   GoToA2
 End Sub

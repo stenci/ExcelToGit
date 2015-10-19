@@ -1,6 +1,8 @@
 Refresh list of open documents,,,,,,
 ,,,,,,
 Actions,,,,Name,Git folder,Folder
+Export,Git gui,gitk,bash,IntelliWeb Dev,F:\workspace\IntelliWeb Dev,
+Export,Git gui,gitk,bash,Trespa console.xltm,C:\Users\stefanomenci\Git\Trespa Console,C:\Users\stefanomenci\Git\Trespa Console
 Export,Git gui,gitk,bash,AlphaCAM,C:\Users\stefanomenci\Git\AlphaCAM,
 Export,Git gui,gitk,bash,Averaged Plane.xltm,C:\Users\stefanomenci\Git\Averaged plane,C:\Users\stefanomenci\Git\Averaged plane
 Export,Git gui,gitk,bash,CompareBids.xlsm,C:\Users\stefanomenci\Git\Compare bids,C:\Users\stefanomenci\Git\Compare bids
@@ -17,7 +19,6 @@ Export,Git gui,gitk,bash,Find open windows.xlsm,C:\Users\stefanomenci\Git\Find o
 Export,Git gui,gitk,bash,Intelliclad Details.xls,C:\Users\stefanomenci\Git\Intelliclad details,C:\Users\stefanomenci\Git\Intelliclad details
 Export,Git gui,gitk,bash,IntellicladApp,C:\VB6 Projects\td\IntellicladApp,
 Export,Git gui,gitk,bash,IntellicladBOM,C:\VB6 Projects\td\IntellicladBOM,
-Export,Git gui,gitk,bash,IntelliWeb Dev,F:\workspace\IntelliWeb Dev,
 Export,Git gui,gitk,bash,IntelliWeb Srv,F:\workspace\IntelliWeb Srv,
 Export,Git gui,gitk,bash,MinimizeError.xlsm,C:\Users\stefanomenci\Git\Minimize error,C:\Users\stefanomenci\Git\Minimize error
 Export,Git gui,gitk,bash,Nesting.xla,C:\Users\stefanomenci\Git\Nesting,C:\Users\stefanomenci\AppData\Roaming\Microsoft\AddIns
@@ -32,7 +33,6 @@ Export,Git gui,gitk,bash,SpellChecking.xls,C:\Users\stefanomenci\Git\Spell check
 Export,Git gui,gitk,bash,TD Autoload,C:\Users\stefanomenci\AppData\Roaming\think3\thinkdesign\2009.3\autoload,
 Export,Git gui,gitk,bash,TD Spreadsheet.xltm,C:\Users\stefanomenci\Git\TD Spreadsheet,C:\Users\stefanomenci\Git\TD Spreadsheet
 Export,Git gui,gitk,bash,TDTempSave,C:\VB6 Projects\td\TDTempSave,
-Export,Git gui,gitk,bash,Trespa console.xltm,C:\Users\stefanomenci\Git\Trespa Console,C:\Users\stefanomenci\Git\Trespa Console
 Export,Git gui,gitk,bash,VB_AddIn,C:\Program Files (x86)\think3\2009.3\thinkdesign\Programming\COM\Example\VB.Net\VB_AddIn,
 Export,Git gui,gitk,bash,VBCommand,C:\Program Files (x86)\think3\2009.3\thinkdesign\Programming\COM\Example\VB.Net\VBCommand,
 Export,Git gui,gitk,bash,VBDialog,C:\Program Files (x86)\think3\2009.3\thinkdesign\Programming\COM\Example\VB.Net\VBDialog,
