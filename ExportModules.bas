@@ -46,15 +46,25 @@ Sub Export()
 
   If MsgBox("Export """ & Name & """ to """ & GitFolder & """?", vbYesNo) <> vbYes Then Exit Sub
   
-  Dim VBProj, Comp, Components, Sh As Worksheet, ShName As String, IsVisible As XlSheetVisibility, ActiveSh As Worksheet
+  Dim VBProj
   Set VBProj = WB.VBProject
   
   Application.EnableEvents = False
   Application.DisplayAlerts = False
   
+  Dim NewFiles As New Collection
   If Not WB.Saved Then WB.Save
   Shell "cmd /c copy /y """ & FullName & """ """ & GitFolder & """"
+  NewFiles.Add Name
   
+  Dim OldFiles As New Collection, FName As String
+  FName = Dir(GitFolder & "\*")
+  Do While FName <> ""
+    If LCase(FName) <> ".gitignore" And LCase(FName) <> "readme.md" And LCase(FName) <> "readme.txt" Then OldFiles.Add FName
+    FName = Dir()
+  Loop
+  
+  Dim Comp, Components
   Set Components = VBProj.VBComponents
   For Each Comp In Components
     Select Case Comp.Type
@@ -64,10 +74,14 @@ Sub Export()
       
       Case vbext_ct_ClassModule
         Comp.Export GitFolder & "\" & Comp.Name & ".cls"
+        NewFiles.Add Comp.Name & ".cls"
       
       Case vbext_ct_Document
         Comp.Export GitFolder & "\" & Comp.Name & ".cls"
+        NewFiles.Add Comp.Name & ".cls"
+        
         If Comp.Name <> "ThisWorkbook" Then
+          Dim Sh As Worksheet, ShName As String, IsVisible As XlSheetVisibility, ActiveSh As Worksheet
           Set Sh = SheetWithCodeName(WB, Comp.Name)
           IsVisible = Sh.Visible
           ShName = Sh.Name
@@ -76,7 +90,10 @@ Sub Export()
           Set ActiveSh = WB.ActiveSheet
           WB.Activate
           Sh.Select
+          
           WB.SaveAs FileName:=GitFolder & "\" & CsvShName(Comp.Name, ShName) & ".csv", FileFormat:=xlCSV, CreateBackup:=False
+          NewFiles.Add CsvShName(Comp.Name, ShName) & ".csv"
+          
           Sh.Name = ShName
           ActiveSh.Activate
           If IsVisible <> xlSheetVisible Then Sh.Visible = IsVisible
@@ -86,10 +103,12 @@ Sub Export()
         
       Case vbext_ct_MSForm
         Comp.Export GitFolder & "\" & Comp.Name & ".frm"
+        NewFiles.Add Comp.Name & ".frm"
         Kill GitFolder & "\" & Comp.Name & ".frx"
       
       Case vbext_ct_StdModule
         Comp.Export GitFolder & "\" & Comp.Name & ".bas"
+        NewFiles.Add Comp.Name & ".bas"
       
       Case Else
         Stop
@@ -101,6 +120,30 @@ Sub Export()
   
   Application.DisplayAlerts = True
   Application.EnableEvents = True
+  
+  Dim Iold As Integer, Inew As Integer
+  For Inew = 1 To NewFiles.Count
+    For Iold = 1 To OldFiles.Count
+      If LCase(OldFiles(Iold)) = LCase(NewFiles(Inew)) Then
+        OldFiles.Remove Iold
+        Exit For
+      End If
+    Next Iold
+  Next Inew
+  
+  Dim Txt As String
+  If OldFiles.Count Then
+    Txt = "Delete the following files?"
+    For Iold = 1 To OldFiles.Count
+      Txt = Txt & vbLf & OldFiles(Iold)
+    Next Iold
+    
+    If MsgBox(Txt, vbYesNo) = vbYes Then
+      For Iold = 1 To OldFiles.Count
+        Kill GitFolder & "\" & OldFiles(Iold)
+      Next Iold
+    End If
+  End If
   
   GoToA2
 End Sub

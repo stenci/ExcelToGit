@@ -2,7 +2,7 @@ Refresh list of open documents,,,,,,
 ,,,,,,
 Actions,,,,Name,Git folder,Folder
 ,Git gui,gitk,bash,IntelliWeb Dev,F:\workspace\IntelliWeb Dev,
-Export,,,,R000.xlsm,F:\workspace\IntelliWeb Dev\Nesting\excel,
+Export,,,,R000.xlsm,F:\workspace\IntelliWeb Dev\Nesting\excel,F:\workspace\IntelliWeb Dev\Nesting\excel
 Export,Git gui,gitk,bash,Trespa console.xltm,C:\Users\stefanomenci\Git\Trespa Console,C:\Users\stefanomenci\Git\Trespa Console
 ,Git gui,gitk,bash,AlphaCAM,C:\Users\stefanomenci\Git\AlphaCAM,
 Export,Git gui,gitk,bash,Averaged Plane.xltm,C:\Users\stefanomenci\Git\Averaged plane,C:\Users\stefanomenci\Git\Averaged plane
