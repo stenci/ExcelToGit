@@ -165,6 +165,7 @@ Sub GoToA2()
   Cells(2, 1).Select
   Application.EnableEvents = True
 End Sub
+
 Sub AddIfMissing(WB As Workbook)
   Dim R As Integer, DocFolder As String, Name As String
   DocFolder = WB.Path
@@ -174,7 +175,7 @@ Sub AddIfMissing(WB As Workbook)
     If Cells(R, COL_NAME) = Name And Cells(R, COL_FOLDER) = DocFolder Then Exit Sub
   Next R
   
-  If IsEmpty(Cells(R - 1, 1)) Then R = R - 1
+  If IsEmpty(Cells(R - 1, 5)) Then R = R - 1
   
   Cells(R, COL_EXPORT) = "Export"
   Cells(R, COL_GIT_GUI) = "Git gui"
