@@ -91,7 +91,9 @@ Sub Export()
           WB.Activate
           Sh.Select
           
+          ActiveWindow.DisplayFormulas = True
           WB.SaveAs FileName:=GitFolder & "\" & CsvShName(Comp.Name, ShName) & ".csv", FileFormat:=xlCSV, CreateBackup:=False
+          ActiveWindow.DisplayFormulas = False
           NewFiles.Add CsvShName(Comp.Name, ShName) & ".csv"
           
           Sh.Name = ShName
