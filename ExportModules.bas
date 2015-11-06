@@ -60,7 +60,11 @@ Sub Export()
   Dim OldFiles As New Collection, FName As String
   FName = Dir(GitFolder & "\*")
   Do While FName <> ""
-    If LCase(FName) <> ".gitignore" And LCase(FName) <> "readme.md" And LCase(FName) <> "readme.txt" Then OldFiles.Add FName
+    If LCase(FName) <> ".gitignore" And _
+       LCase(FName) <> ".gitattributes" And _
+       LCase(FName) <> "readme.md" And _
+       LCase(FName) <> "readme.txt" _
+       Then OldFiles.Add FName
     FName = Dir()
   Loop
   
