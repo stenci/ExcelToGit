@@ -1,6 +1,8 @@
 Attribute VB_Name = "ExportModules"
 Option Explicit
 
+Public Declare PtrSafe Function SetCurrentDirectoryA Lib "kernel32" (ByVal lpPathName As String) As Long
+
 Global Const COL_EXPORT = 1
 Global Const COL_GIT_GUI = 2
 Global Const COL_GITK = 3
@@ -271,8 +273,12 @@ Sub GitGui()
 End Sub
 
 Sub ChDir2(Path As String)
-  If Mid(Path, 2, 1) = ":" Then ChDrive Left(Path, 2)
-  ChDir Path
+  If Left(Path, 2) = "\\" Then
+    SetCurrentDirectoryA Path
+  Else
+    If Mid(Path, 2, 1) = ":" Then ChDrive Left(Path, 2)
+    ChDir Path
+  End If
 End Sub
 
 Sub Gitk()
