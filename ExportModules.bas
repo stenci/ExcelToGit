@@ -49,7 +49,7 @@ Sub Export()
   If MsgBox("Export """ & Name & """ to """ & GitFolder & """?", vbYesNo) <> vbYes Then Exit Sub
   
   Dim VBProj
-  Set VBProj = WB.VBProject
+  Set VBProj = WB.VBProject 'see https://github.com/stenci/ExcelToGit
   
   Application.EnableEvents = False
   Application.DisplayAlerts = False
@@ -92,8 +92,8 @@ Sub Export()
           IsVisible = Sh.Visible
           ShName = Sh.Name
           If IsAddin(Name) Then WB.IsAddin = False
-          If IsVisible <> xlSheetVisible Then Sh.Visible = xlSheetVisible
           Set ActiveSh = WB.ActiveSheet
+          If IsVisible <> xlSheetVisible Then Sh.Visible = xlSheetVisible
           WB.Activate
           Sh.Select
           
