@@ -153,7 +153,7 @@ Sub Export()
     End If
   End If
   
-  GoToA2
+  GoToNameColumn
 End Sub
 
 Function SheetWithCodeName(WB As Workbook, CodeName As String) As Worksheet
@@ -208,12 +208,12 @@ Sub Refresh()
   
   Application.EnableEvents = True
   
-  GoToA2
+  GoToNameColumn
 End Sub
 
-Sub GoToA2()
+Sub GoToNameColumn()
   Application.EnableEvents = False
-  Cells(2, 1).Select
+  Cells(ActiveCell.Row, 5).Select
   Application.EnableEvents = True
 End Sub
 
@@ -249,7 +249,7 @@ Sub OpenFolder(FolderName As String)
   
   ThisWorkbook.FollowHyperlink FolderName
   
-  GoToA2
+  GoToNameColumn
 End Sub
 
 Sub GitGui()
@@ -269,7 +269,7 @@ Sub GitGui()
   ChDir2 GitFolder
   Shell """C:\Program Files\Git\cmd\Git-gui.exe"""
   
-  GoToA2
+  GoToNameColumn
 End Sub
 
 Sub ChDir2(Path As String)
@@ -298,7 +298,7 @@ Sub Gitk()
   ChDir2 GitFolder
   Shell """C:\Program Files\Git\cmd\Gitk.exe"" --all"
   
-  GoToA2
+  GoToNameColumn
 End Sub
 
 Sub GitBash()
@@ -318,7 +318,7 @@ Sub GitBash()
   ChDir2 GitFolder
   Shell """C:\Program Files\Git\Git-bash.exe"""
   
-  GoToA2
+  GoToNameColumn
 End Sub
 
 Function FolderName(FullPath As String) As String
