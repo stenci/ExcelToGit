@@ -36,23 +36,24 @@ Export,Git gui,gitk,bash,Intelliclad Details.xls,C:\Users\stefanomenci\Git\Intel
 ,Git gui,gitk,bash,=FolderName(F36),\\UCCONFIG4\C$\IntelliWeb,
 Export,Git gui,gitk,bash,MinimizeError.xlsm,C:\Users\stefanomenci\Git\Minimize error,C:\Users\stefanomenci\Git\Minimize error
 Export,Git gui,gitk,bash,Nesting.xla,C:\Users\stefanomenci\Git\Nesting,C:\Users\stefanomenci\AppData\Roaming\Microsoft\AddIns
-,Git gui,gitk,bash,=FolderName(F39),C:\Users\stefanomenci\Desktop\PanelEditor\PanelEditor,
+,Git gui,gitk,bash,Peewee,C:\workspace\Peewee,
+,Git gui,gitk,bash,=FolderName(F40),C:\Users\stefanomenci\Git\PanelEditor,
 Export,Git gui,gitk,bash,PanelTakeOff.xltm,C:\Users\stefanomenci\Git\Panel takeoff,C:\Users\stefanomenci\Git\Panel takeoff
 Export,Git gui,gitk,bash,Random panel generator.xltm,C:\Users\stefanomenci\Git\Random panel generator,C:\Users\stefanomenci\Git\Random panel generator
-,Git gui,gitk,bash,=FolderName(F42),C:\VB6 Projects\td\Relations,
-,Git gui,gitk,bash,=FolderName(F43),C:\VB6 Projects\td\RelGraph,
+,Git gui,gitk,bash,=FolderName(F43),C:\VB6 Projects\td\Relations,
+,Git gui,gitk,bash,=FolderName(F44),C:\VB6 Projects\td\RelGraph,
 Export,Git gui,gitk,bash,ScanEvents.xlsm,C:\Users\stefanomenci\Git\Scan events,C:\Users\stefanomenci\Git\Scan events
 Export,Git gui,gitk,bash,Sort BOM.xls,C:\Users\stefanomenci\Git\Sort BOM,C:\Users\stefanomenci\Git\Sort BOM
 Export,Git gui,gitk,bash,SpellChecking.xls,C:\Users\stefanomenci\Git\Spell checking,C:\Users\stefanomenci\Git\Spell checking
 ,Git gui,gitk,bash,TD Autoload,C:\Users\stefanomenci\AppData\Roaming\think3\thinkdesign\2009.3\autoload,
 Export,Git gui,gitk,bash,TD Spreadsheet.xltm,C:\Users\stefanomenci\Git\TD Spreadsheet,C:\Users\stefanomenci\Git\TD Spreadsheet
-,Git gui,gitk,bash,=FolderName(F49),C:\VB6 Projects\td\TDTempSave,
-,Git gui,gitk,bash,=FolderName(F50),C:\Users\stefanomenci\Git\TdUpdate,
+,Git gui,gitk,bash,=FolderName(F50),C:\VB6 Projects\td\TDTempSave,
+,Git gui,gitk,bash,=FolderName(F51),C:\Users\stefanomenci\Git\TdUpdate,
 Export,Git gui,gitk,bash,Tracy Macro.xlsm,C:\Users\stefanomenci\Git\Tracy Macro,C:\Users\stefanomenci\Git\Tracy Macro
 Export,Git gui,gitk,bash,Unit Pricing Spreadsheet.xlsm,Y:\Quote Unit Pricing 1.0\Development,Y:\Quote Unit Pricing 1.0\Development
-,Git gui,gitk,bash,=FolderName(F53),C:\Program Files (x86)\think3\2009.3\thinkdesign\Programming\COM\Example\VB.Net\VB_AddIn,
-,Git gui,gitk,bash,=FolderName(F54),C:\Program Files (x86)\think3\2009.3\thinkdesign\Programming\COM\Example\VB.Net\VBCommand,
-,Git gui,gitk,bash,=FolderName(F55),C:\Program Files (x86)\think3\2009.3\thinkdesign\Programming\COM\Example\VB.Net\VBDialog,
+,Git gui,gitk,bash,=FolderName(F54),C:\Program Files (x86)\think3\2009.3\thinkdesign\Programming\COM\Example\VB.Net\VB_AddIn,
+,Git gui,gitk,bash,=FolderName(F55),C:\Program Files (x86)\think3\2009.3\thinkdesign\Programming\COM\Example\VB.Net\VBCommand,
+,Git gui,gitk,bash,=FolderName(F56),C:\Program Files (x86)\think3\2009.3\thinkdesign\Programming\COM\Example\VB.Net\VBDialog,
 Export,Git gui,gitk,bash,WikiTable.xlsm,C:\Users\stefanomenci\Git\WikiTable,C:\Users\stefanomenci\Git\WikiTable
 Export,Git gui,gitk,bash,Macro per uisp addin.xla,C:\Users\stefano\documents\Valerio\Macro per Uisp,C:\Users\stefano\documents\Valerio\Macro per Uisp
 Export,Git gui,gitk,bash,Vuoto.xlsx,C:\Users\stefano\documents\Valerio\Vuoto,C:\Users\stefano\documents\Valerio\Vuoto
