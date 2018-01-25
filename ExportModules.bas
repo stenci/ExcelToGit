@@ -252,6 +252,16 @@ Sub OpenFolder(FolderName As String)
   GoToNameColumn
 End Sub
 
+Function GitExeFolder() As String
+  If Dir("C:\Program Files (x86)\Git", vbDirectory) <> "" Then
+    GitExeFolder = "C:\Program Files (x86)\Git"
+  ElseIf Dir("C:\Program Files\Git", vbDirectory) <> "" Then
+    GitExeFolder = "C:\Program Files\Git"
+  Else
+    Stop
+  End If
+End Function
+
 Sub GitGui()
   Dim GitFolder As String
   GitFolder = Cells(ActiveCell.Row, COL_GIT_FOLDER)
@@ -267,7 +277,7 @@ Sub GitGui()
   End If
   
   ChDir2 GitFolder
-  Shell """C:\Program Files\Git\cmd\Git-gui.exe"""
+  Shell """" & GitExeFolder & "\cmd\Git-gui.exe"""
   
   GoToNameColumn
 End Sub
@@ -296,7 +306,7 @@ Sub Gitk()
   End If
   
   ChDir2 GitFolder
-  Shell """C:\Program Files\Git\cmd\Gitk.exe"" --all"
+  Shell """" & GitExeFolder & "\cmd\Gitk.exe"" --all"
   
   GoToNameColumn
 End Sub
@@ -316,7 +326,7 @@ Sub GitBash()
   End If
   
   ChDir2 GitFolder
-  Shell """C:\Program Files\Git\Git-bash.exe"""
+  Shell """" & GitExeFolder & "\Git-bash.exe"""
   
   GoToNameColumn
 End Sub
