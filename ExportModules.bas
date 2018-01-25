@@ -240,14 +240,23 @@ Function IsAddin(Name As String) As Boolean
   IsAddin = UCase(Right(Name, 4)) = ".XLA"
 End Function
 
-Sub OpenFolder(FolderName As String)
+Sub OpenFolder(FolderName As Range)
   If FolderName = "" Then Exit Sub
   If Dir(FolderName, vbDirectory) = "" Then
     MsgBox "Folder """ & FolderName & """ not found", vbCritical
     Exit Sub
   End If
   
-  ThisWorkbook.FollowHyperlink FolderName
+  Dim FileName As String
+  FileName = FolderName.Value & "\" & FolderName.Worksheet.Cells(FolderName.Row, COL_NAME)
+  
+  Dim SystemRoot As String, Sh As New Shell
+  SystemRoot = Environ("SystemRoot")
+  If Dir(FileName) <> "" Then
+    Sh.ShellExecute SystemRoot & "\Explorer.exe", "/select, """ & FileName & """", "", "open", 1
+  Else
+    Sh.ShellExecute SystemRoot & "\Explorer.exe", """" & FolderName.Value & """", "", "open", 1
+  End If
   
   GoToNameColumn
 End Sub

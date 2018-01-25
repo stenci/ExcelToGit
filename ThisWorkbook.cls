@@ -24,7 +24,6 @@ Private Sub Workbook_SheetSelectionChange(ByVal Sh As Object, ByVal Target As Ra
       Case "bash": GitBash
     End Select
   ElseIf C = COL_GIT_FOLDER Or C = COL_FOLDER Then
-    Txt = Cells(Target.Row, C).Value2
-    OpenFolder Txt
+    OpenFolder Cells(Target.Row, C)
   End If
 End Sub
