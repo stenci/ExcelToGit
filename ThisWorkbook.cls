@@ -23,7 +23,7 @@ Private Sub Workbook_SheetSelectionChange(ByVal Sh As Object, ByVal Target As Ra
       Case "gitk": Gitk
       Case "bash": GitBash
     End Select
-  ElseIf C = COL_GIT_FOLDER Or C = COL_FOLDER Then
+  ElseIf C = COL_GIT_FOLDER Or C = COL_FOLDER Or C = COL_REMOTE_FOLDER Then
     OpenFolder Cells(Target.Row, C)
   End If
 End Sub

@@ -10,6 +10,7 @@ Global Const COL_GIT_BASH = 4
 Global Const COL_NAME = 5
 Global Const COL_GIT_FOLDER = 6
 Global Const COL_FOLDER = 7
+Global Const COL_REMOTE_FOLDER = 8
 
 Enum X
   vbext_ct_ActiveXDesigner = 11
