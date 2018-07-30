@@ -57,7 +57,7 @@ Sub Export()
   
   Dim NewFiles As New Collection
   If Not WB.Saved Then WB.Save
-  Shell "cmd /c copy /y """ & FullName & """ """ & GitFolder & """"
+  If Folder <> GitFolder Then Shell "cmd /c copy /y """ & FullName & """ """ & GitFolder & """"
   NewFiles.Add Name
   
   Dim OldFiles As New Collection, FName As String
@@ -125,7 +125,12 @@ Sub Export()
     End Select
   Next Comp
 
-  WB.SaveAs FileName:=FullName, FileFormat:=Ext2Format(FullName), CreateBackup:=False
+  If WB Is ThisWorkbook Then
+    WB.SaveAs FileName:=FullName, FileFormat:=Ext2Format(FullName), CreateBackup:=False
+  Else
+    WB.Close
+    Set WB = Workbooks.Open(FullName)
+  End If
   
   Application.DisplayAlerts = True
   Application.EnableEvents = True
