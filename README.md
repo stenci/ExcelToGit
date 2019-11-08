@@ -17,7 +17,7 @@ check Trust access to the Visual Basic Project.
 Code panel, then in the Macro Settings page check the Trust access to the VBA project object model.
 
 ### Examples
-The first 5 rows are examples use cases, the following row is the real ones that I use for this addin. 
+The first 5 rows are examples use cases, the following row is the real one that I use for this addin. 
 Here is the description of the 5 examples:
 
 #### Addin.xla
