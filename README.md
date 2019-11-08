@@ -16,7 +16,7 @@ check Trust access to the Visual Basic Project.
 * In Excel 2007 and later: click the Developer item on the main Ribbon, then click the Macro Security item in the 
 Code panel, then in the Macro Settings page check the Trust access to the VBA project object model.
 
-###Examples
+### Examples
 The first 5 rows are examples use cases, the following row is the real ones that I use for this addin. 
 Here is the description of the 5 examples:
 
