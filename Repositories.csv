@@ -1,73 +1,8 @@
-Actions,,,,Name,Git folder,Folder,Remote folder
-Export,Git gui,gitk,bash,Addin.xla,N:\Tools\Git\Addin,N:\Tools\Git\Addin,
-Export,Git gui,gitk,bash,Macro.xlsm,N:\Tools\Git\Macro,N:\Tools\Git\Macro,
-,Git gui,gitk,bash,App,N:\Tools\Git\App,,
-Export,,,,App1.xlsm,N:\Tools\Git\App\Xl\App1,N:\Tools\Git\App\Xl\App1,
-Export,,,,App2.xlsm,N:\Tools\Git\App\Xl\App2,N:\Tools\Git\App\Xl\App2,
-,,,,,,,
-,Git gui,gitk,bash,IntelliWeb,N:\Tools\Git\IntelliWeb,C:\Workspace\IntelliWeb,N:\Tools\Git\IntelliWeb
-,Git gui,gitk,bash,IntelliWeb1.5,N:\Tools\Git\IntelliWeb1.5,C:\Workspace\IntelliWeb1.5,N:\Tools\Git\IntelliWeb1.5
-,Git gui,gitk,bash,IntelliWeb2,N:\Tools\Git\IntelliWeb2,C:\Workspace\IntelliWeb2,N:\Tools\Git\IntelliWeb2
-,Git gui,gitk,bash,TdServer,C:\workspace\TdServer,,N:\Tools\Git\TdServer
-,Git gui,gitk,bash,Nesting,C:\workspace\Nesting,,N:\Tools\Git\Nesting
-Export,,,,R000.xlsm,C:\workspace\Nesting\excel,C:\workspace\Nesting\excel,N:\Tools\Git\Nesting\Excel
-Export,Git gui,gitk,bash,IntelliCladConsole.xltm,N:\Tools\Git\IntelliCladConsole,N:\Tools\Git\IntelliCladConsole,
-Export,Git gui,gitk,bash,IntelliCladConsole Engineering.xltm,N:\Tools\Git\IntelliCladConsole Engineering,N:\Tools\Git\IntelliCladConsole Engineering,
-Export,Git gui,gitk,bash,IntelliCladConsole EQUITONE 9000.xltm,N:\Tools\Git\IntelliCladConsole EQUITONE 9000,N:\Tools\Git\IntelliCladConsole EQUITONE 9000,
-Export,Git gui,gitk,bash,IntelliCladConsole Estimating.xltm,N:\Tools\Git\IntelliCladConsole Estimating,N:\Tools\Git\IntelliCladConsole Estimating,
-,Git gui,gitk,bash,=FolderName(F18),N:\Tools\Git\AlphaCAM,,
-Export,Git gui,gitk,bash,Averaged Plane.xltm,N:\Tools\Git\Averaged plane,N:\Tools\Git\Averaged plane,
-Export,Git gui,gitk,bash,Averaged Plane Inventor.xltm,N:\Tools\Git\Averaged Plane Inventor,N:\Tools\Git\Averaged Plane Inventor,
-Export,Git gui,gitk,bash,ChangeVars.xls,N:\Tools\Git\ChangeVars,I:\Wizard_4\Other Stuff\Generic panel,
-,Git gui,gitk,bash,CncMacro,C:\VB.Net Projects\CncMacro,C:\VB.Net Projects\CncMacro,
-,Git gui,gitk,bash,CncMacroMacros,\\UNI-HQ-SRV6\Router\Macros\CncMacroMacros,,
-Export,Git gui,gitk,bash,CompareBids.xlsm,N:\Tools\Git\Compare bids,N:\Tools\Git\Compare bids,
-Export,Git gui,gitk,bash,CompareWorkbooks.xlsm,N:\Tools\Git\Compare workbooks,N:\Tools\Git\Compare workbooks,
-Export,Git gui,gitk,bash,Container calculator.xltm,N:\Tools\Git\Container calculator,N:\Tools\Git\Container calculator,
-,Git gui,gitk,bash,DeleteOldTempSave,C:\workspace\DelOldTempSave,,
-Export,Git gui,gitk,bash,Drawing Printer.xltm,N:\Tools\Git\Drawing printer,N:\Tools\Git\Drawing printer,
-Export,Git gui,gitk,bash,Excel to Git.xlsm,N:\Tools\Git\Excel To Git,N:\Tools\Git\Excel To Git,
-Export,Git gui,gitk,bash,ExportModules.xls,N:\Tools\Git\Export modules,N:\Tools\Git\Export modules,
-Export,Git gui,gitk,bash,Extrusion Holes.xltm,N:\Tools\Git\Extrusion holes,N:\Tools\Git\Extrusion holes,
-Export,Git gui,gitk,bash,ExtrusionEditor.xlsm,N:\Tools\Git\Extrusion Editor,N:\Tools\Git\Extrusion Editor,
-Export,Git gui,gitk,bash,ExtrusionTakeOff.xltm,N:\Tools\Git\Extrusion takeoff,N:\Tools\Git\Extrusion takeoff,
-Export,Git gui,gitk,bash,Find open windows.xlsm,N:\Tools\Git\Find open windows,N:\Tools\Git\Find open windows,
-,Git gui,gitk,bash,Gimp,C:\Users\stefanomenci\.gimp-2.8\scripts,,
-Export,Git gui,gitk,bash,Group library.xlsm,N:\Tools\Git\Group library,N:\Tools\Git\Group library,
-,Git gui,gitk,bash,=FolderName(F37),C:\VB6 Projects\td\IntellicladApp,,
-,Git gui,gitk,bash,=FolderName(F38),C:\VB6 Projects\td\IntellicladBOM,,
-Export,Git gui,gitk,bash,IntelliShops.xltm,N:\Tools\Git\IntelliShops,N:\Tools\Git\IntelliShops,
-,Git gui,gitk,bash,=FolderName(F40),\\UCCONFIG4\C$\IntelliWeb,,
-,Git gui,gitk,bash,Inventor IVB,N:\Tools\Git\Inventor IVB,N:\Tools\Git\Inventor IVB,
-,Git gui,gitk,bash,Inventor Update,N:\Tools\Git\Inventor Update,N:\Tools\Git\Inventor Update,
-Export,Git gui,gitk,bash,Macro per uisp addin.xla,C:\workspace\Valerio\UISP,C:\workspace\Valerio\UISP,
-,Git gui,gitk,bash,mongo_api,C:\workspace\mongo_api,C:\workspace\mongo_api,
-Export,Git gui,gitk,bash,MinimizeError.xlsm,N:\Tools\Git\Minimize error,N:\Tools\Git\Minimize error,
-Export,Git gui,gitk,bash,Nesting.xla,N:\Tools\Git\Nesting,N:\Tools\Git\Nesting,
-,Git gui,gitk,bash,OpenCart,C:\workspace\OpenCart,C:\workspace\OpenCart,
-Export,,,,OpenCart.xlsm,C:\workspace\OpenCart\Excel,C:\workspace\OpenCart\Excel,
-,Git gui,gitk,bash,=FolderName(F49),N:\Tools\Git\PanelEditor,,
-Export,Git gui,gitk,bash,PanelTakeOff.xltm,N:\Tools\Git\Panel takeoff,N:\Tools\Git\Panel takeoff,
-,Git gui,gitk,bash,Peewee,C:\workspace\Peewee,,
-Export,Git gui,gitk,bash,Quote unit price.xltm,N:\Tools\Git\Quote unit price,N:\Tools\Git\Quote unit price,
-Export,Git gui,gitk,bash,Queue Manager.xlsm,C:\workspace\Queue Manager\Excel,C:\workspace\Queue Manager\Excel,
-Export,Git gui,gitk,bash,Random panel generator.xltm,N:\Tools\Git\Random panel generator,N:\Tools\Git\Random panel generator,
-,Git gui,gitk,bash,=FolderName(F55),C:\VB6 Projects\td\Relations,,
-,Git gui,gitk,bash,=FolderName(F56),C:\VB6 Projects\td\RelGraph,,
-Export,Git gui,gitk,bash,ScanEvents.xlsm,N:\Tools\Git\Scan events,N:\Tools\Git\Scan events,
-Export,Git gui,gitk,bash,Sort BOM.xls,N:\Tools\Git\Sort BOM new,N:\Tools\Git\Sort BOM new,
-Export,Git gui,gitk,bash,Sort BOM.xls,N:\Tools\Git\Sort BOM,N:\Tools\Git\Sort BOM,
-Export,Git gui,gitk,bash,SpellChecking.xls,N:\Tools\Git\Spell checking,N:\Tools\Git\Spell checking,
-,Git gui,gitk,bash,TD Autoload,C:\Users\stefanomenci\AppData\Roaming\think3\thinkdesign\2009.3\autoload,,
-Export,Git gui,gitk,bash,TD Spreadsheet.xltm,N:\Tools\Git\TD Spreadsheet,N:\Tools\Git\TD Spreadsheet,
-,Git gui,gitk,bash,=FolderName(F63),C:\VB6 Projects\td\TDTempSave,,
-,Git gui,gitk,bash,=FolderName(F64),N:\Tools\Git\TdUpdate,,
-Export,Git gui,gitk,bash,Tracy Macro.xlsm,N:\Tools\Git\Tracy Macro,N:\Tools\Git\Tracy Macro,
-Export,Git gui,gitk,bash,UsrKb-cfg.xls,N:\Tools\Git\UsrKb-cfg,,
-,Git gui,gitk,bash,=FolderName(F67),C:\workspace\UniverseRibbons,,N:\Tools\Git\UniverseRibbons
-,Git gui,gitk,bash,=FolderName(F68),C:\Program Files (x86)\think3\2009.3\thinkdesign\Programming\COM\Example\VB.Net\VB_AddIn,,
-,Git gui,gitk,bash,=FolderName(F69),C:\Program Files (x86)\think3\2009.3\thinkdesign\Programming\COM\Example\VB.Net\VBCommand,,
-,Git gui,gitk,bash,=FolderName(F70),C:\Program Files (x86)\think3\2009.3\thinkdesign\Programming\COM\Example\VB.Net\VBDialog,,
-Export,Git gui,gitk,bash,Vuoto.xlsx,C:\Users\stefano\documents\Valerio\Vuoto,C:\Users\stefano\documents\Valerio\Vuoto,
-Export,Git gui,gitk,bash,WikiTable.xlsm,N:\Tools\Git\WikiTable,N:\Tools\Git\WikiTable,
-Export,Git gui,gitk,bash,Wizard.xlsm,C:\workspace\Wizard\Excel,C:\workspace\Wizard\Excel,
+Actions,,,,Name,File to export folder,Git folder
+Export,Git gui,gitk,bash,Addin.xla,C:\Users\Me\AppData\Roaming\Microsoft\AddIns\Addin.xla,N:\Git\Addin
+Export,Git gui,gitk,bash,Macro.xlsm,C:\MyFolder,N:\Git\Macro
+,Git gui,gitk,bash,App,C:\MyFolder,N:\Git\App
+Export,,,,App1.xlsm,C:\MyFolder,N:\Git\App\Xl\App1
+Export,,,,App2.xlsm,C:\MyFolder,N:\Git\App\Xl\App2
+,,,,,,
+Export,Git gui,gitk,bash,Excel to Git.xlsm,N:\Tools\Git\Excel To Git,N:\Tools\Git\Excel To Git

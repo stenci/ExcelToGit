@@ -9,6 +9,16 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
 Option Explicit
 
+Private Sub Workbook_BeforeClose(Cancel As Boolean)
+  Dim Folder As String, File As String
+  Folder = Environ("TEMP")
+  File = Dir(Folder & "\ExcelToGit*")
+  Do While File <> ""
+    Kill Folder & "\" & File
+    File = Dir
+  Loop
+End Sub
+
 Private Sub Workbook_SheetSelectionChange(ByVal Sh As Object, ByVal Target As Range)
   Dim Txt As String, C As Integer
   If Target.Rows.Count > 1 Then Exit Sub
@@ -23,7 +33,7 @@ Private Sub Workbook_SheetSelectionChange(ByVal Sh As Object, ByVal Target As Ra
       Case "gitk": Gitk
       Case "bash": GitBash
     End Select
-  ElseIf C = COL_GIT_FOLDER Or C = COL_FOLDER Or C = COL_REMOTE_FOLDER Then
+  ElseIf C = COL_GIT_FOLDER Or C = COL_FILE_FOLDER Then
     OpenFolder Cells(Target.Row, C)
   End If
 End Sub
